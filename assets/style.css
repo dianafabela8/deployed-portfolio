@@ -11,8 +11,8 @@ body {
 /* styles for header */
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #7c2c92;
     color: #ffffff;
 }
 
@@ -53,10 +53,10 @@ p {
 }
 
 .hero {
-    height: 800px;
+    height: 150px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-image: url("./images/Screenshot\ 2023-06-22\ at\ 3.55.20\ PM.png");
     background-size: cover;
     background-position: center;
 }
@@ -72,9 +72,12 @@ p {
 }
 
 .content {
-    width: 75%;
+    display: flex;
+    width: 100%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: right;
 }
 
 .benefits {
@@ -85,7 +88,7 @@ p {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: #766e75;
 }
 
 .benefit {
@@ -108,11 +111,11 @@ p {
 /* Styles for section */
 
 .font {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    font-family: math;
+    background-color: #347daba0;
     color: #ffffff;
 }
 
@@ -136,3 +139,21 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+/* Class selector */
+.highlighted-text {
+    font-weight: bolder;
+    list-style: none;
+  }
+
+@media screen and (max-width: 893px) {
+    .header {
+      width: 50%;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .header {
+      width: 100%;
+    }
+  }
