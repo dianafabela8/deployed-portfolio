@@ -14,6 +14,7 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: #7c2c92;
     color: #ffffff;
+    width: 1000px;
 }
 
 .header h1 {
@@ -146,13 +147,13 @@ p {
     list-style: none;
   }
 
-@media screen and (max-width: 893px) {
+@media screen and (min-width: 893px) {
     .header {
-      width: 50%;
+      width: 250px;
     }
   }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .header {
       width: 100%;
     }
