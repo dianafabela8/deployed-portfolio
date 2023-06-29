@@ -5,16 +5,15 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: rgb(4, 50, 119);
 }
 
 /* styles for header */
 .header {
     padding: 20px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: #7c2c92;
-    color: #ffffff;
-    width: 1000px;
+    font-family: Quicksand, sans-serif;
+    background-color: rgb(99, 149, 171);
+    color: black;
 }
 
 .header h1 {
@@ -32,6 +31,7 @@ body {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    cursor: grab
 }
 
 .header nav ul {
@@ -44,69 +44,22 @@ body {
 }
 
 a {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
 }
 
 /* font size for paragraph*/
 p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .hero {
     height: 150px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("./images/Screenshot\ 2023-06-22\ at\ 3.55.20\ PM.png");
+    background-image: url("./images/Header.png");
     background-size: cover;
     background-position: center;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-.content {
-    display: flex;
-    width: 100%;
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: right;
-}
-
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #766e75;
-}
-
-.benefit {
-    margin-bottom: 32px;
-    color: #ffffff; 
-}
-
-.benefit h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
-.benefit img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
 }
 
 /* Styles for section */
@@ -114,10 +67,9 @@ p {
 .font {
     margin-bottom: 30px;
     padding: 50px;
-    height: 300px;
     font-family: math;
-    background-color: #347daba0;
-    color: #ffffff;
+    background-color: transparent;
+    color: rgb(89, 132, 167);
 }
 
 .feature-image img {
@@ -125,6 +77,7 @@ p {
 }
 
 .h2 {
+    
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -143,18 +96,86 @@ p {
 
 /* Class selector */
 .highlighted-text {
+    flex: display;
     font-weight: bolder;
     list-style: none;
-  }
+    font-size: 20px;
+}
 
+/* maxwidth = that pixels or less.. window width */
+@media screen and (max-width: 893px) {
+    .header nav {
+        width: 100%;
+        text-align:center;
+    }
+
+    .header nav ul {
+        border: 1px solid black;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 150%;
+        line-height: 1.95rem;
+    }
+    .header nav ul li a {
+       transition: all 300ms ease;
+    }
+    .header nav ul li a:hover {
+        color: pink;
+        letter-spacing:3.5px;
+    }
+}
+
+.content-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.content-row h2 {
+    width:200px;
+}
+.content-row .content-inner {
+    border: 1px solid black;
+    width:100%;
+}
+
+.bigImg {
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    border: 1px solid black;
+   display: flex;
+    justify-content: center;
+
+}
+
+
+
+/*------------------- */
+ .card {
+    position: relative;
+    margin: 25px;
+ }
+
+ .card a h3 {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background: rgb(180, 180, 180);
+ }
+/*------------------- */
+
+/* minwidth = that pixels or more */
 @media screen and (min-width: 893px) {
-    .header {
-      width: 250px;
+    nav {
+        width: 420px;
     }
-  }
+}
 
-/*@media screen and (max-width: 768px) {
-    .header {
-      width: 100%;
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
     }
-  }
+}

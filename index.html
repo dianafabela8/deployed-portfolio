@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/style.css" alt="colorful header picture">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
@@ -16,37 +16,110 @@
                     <a href="#about-me h2">About Me</a>
                 </li>
                 <li>
-                    <a href="#work">Work</a>
+                    <a href="#work h2">Work</a>
                 </li>
                 <li>
-                    <a href="#Contactme">Contact Me</a>
+                    <a href="#contact-me h2">Contact Me</a>
                 </li>
                 <li>
-                    <a href="#Resume">Resume</a></li>
+                    <a href="#resume h2">Resume</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <nav class="hero"></nav>
-    <nav class="content">
-        <section id="about-me h2"  class="about-me font feature-image">
-            <h2>About Me</h2>
+    <nav class="hero">
+    </nav>
+    <main class="content">
+
+        <section id="about-me h2" class="content-row about-me font feature-image">
+            <h2> About Me </h2>
+
+            <h2> <img src="./assets/images/Avatar.png" alt="avatar"></h2>
+
+            <section class="content-inner">
+                <p> Hi there! I'm Diana! I am into Web Dev! I am also bilingual in Spanish and English! </p>
+
+            </section>
         </section>
-        <section id="work h2"  class="work font feature-image">
+
+        <section id="work h2" class="content-row work font feature-image">
             <h2>Work</h2>
+            <section class="content-inner" id="works">
+                <div class="card bigImg">
+                    <a target="_blank" href="https://dianafabela8.github.io/horiseon/">
+                        <img src="./assets/images/Horiseon.png" width="500px" height="500px">
+                        <h3>Horiseon</h3>
+                    </a>
+                </div>
+                <div class="flex">
+                    <section>
+                        <div class="card">
+                            <a target="_blank" href="https://dianafabela8.github.io/horiseon/">
+                                <img src="./assets/images/Horiseon.png" width="200px">
+                                <h3>Test</h3>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a target="_blank" href="https://dianafabela8.github.io/horiseon/">
+                                <img src="./assets/images/Horiseon.png" width="200px">
+                                <h3>Test</h3>
+                            </a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="card">
+                            <a target="_blank" href="https://dianafabela8.github.io/horiseon/">
+                                <img src="./assets/images/Horiseon.png" width="200px">
+                                <h3>Test</h3>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a target="_blank" href="https://dianafabela8.github.io/horiseon/">
+                                <img src="./assets/images/Horiseon.png" width="200px">
+                                <h3>Test</h3>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+
+
+                <!-- <article class="work-card" id="work-1">
+                    <h3>Some work</h3>
+                    <nav>
+                        <a href="github.com">Repo</a><br/>
+                        <a href="github.com">Deployed</a>
+                    </nav>
+                    </div>
+                </article>
+                <article class="work-card" id="work-2">
+        
+                        <h3>Some work</h3>
+                        <nav>
+                            <a href="github.com">Repo</a><br/>
+                            <a href="github.com">Deployed</a>
+                        </nav>
+                    </div>
+                </article> -->
+            </section>
         </section>
-        <section id="contact-me h2" class="contact-me font feature-image">
-            <h2>Contact Me
+
+        <section id="contact-me h2" class="content-row contact-me font feature-image">
+            <h2>Contact Me</h2>
+            <section class="content-inner">
                 <ul class="highlighted-text">
                     <li>Email: <a href="#">fabeladiana.df@gmail.com</a></li>
-                    <li>GitHub: <a href="#">sampleName</a></li>
-                  </ul>
-                  </h2>
+                    <li>GitHub: <a href="#">https://github.com/dianafabela8</a></li>
+                    <li>Phone: <a href="#">916.846.4521</a></li>
+                </ul>
+            </section>
         </section>
-        <section id="resume h2" class="resume font feature-image">
+
+        <section id="resume h2" class="content-row resume font feature-image">
             <h2>Resume</h2>
+            <section class="content-inner"></section>
         </section>
-    </nav>
+    </main>
     <footer class="footer">
         <h2>Made with ❤️️ by Diana</h2>
     </footer>
