@@ -7,6 +7,7 @@ Created a website for my portfolio with Advanced CSS styles and html
 
 ![This webpage includes a navigation bar, a header image and text and images.](./assets/images/Portfolio.png)
 
-Deployed link: 
+Deployed link: https://dianafabela8.github.io/deployed-portfolio/
+
 
 
